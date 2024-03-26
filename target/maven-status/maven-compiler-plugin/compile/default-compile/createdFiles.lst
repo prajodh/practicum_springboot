@@ -1,3 +1,13 @@
 iu\edu\ppsunder\primenumbers\controller\HomeController.class
-iu\edu\ppsunder\primenumbers\PrimeNumbersApplication.class
 iu\edu\ppsunder\primenumbers\controller\PrimesController.class
+iu\edu\ppsunder\primenumbers\service\AuthenticationService.class
+iu\edu\ppsunder\primenumbers\security\KeyGeneratorUtils.class
+iu\edu\ppsunder\primenumbers\repository\AuthenticationFileRepository.class
+iu\edu\ppsunder\primenumbers\controller\AuthenticationController.class
+iu\edu\ppsunder\primenumbers\repository\IAuthenticationRepository.class
+iu\edu\ppsunder\primenumbers\service\IAuthenticationService.class
+iu\edu\ppsunder\primenumbers\security\Jwks.class
+iu\edu\ppsunder\primenumbers\model\Customer.class
+iu\edu\ppsunder\primenumbers\PrimeNumbersApplication.class
+iu\edu\ppsunder\primenumbers\security\SecurityConfig.class
+iu\edu\ppsunder\primenumbers\service\TokenService.class
