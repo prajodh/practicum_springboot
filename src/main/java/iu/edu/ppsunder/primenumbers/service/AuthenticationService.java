@@ -49,10 +49,5 @@ class AuthenticationService implements IAuthenticationService,
         return authenticationRepository.save(customer);
     }
 
-    @Override
-    public Boolean login(String username, String password) throws IOException {
-        return null;
-    }
-
 
 }

@@ -8,5 +8,4 @@ public interface IAuthenticationService {
 
     boolean register (Customer customer) throws IOException;
 
-    Boolean login(String username, String password) throws IOException;
 }
