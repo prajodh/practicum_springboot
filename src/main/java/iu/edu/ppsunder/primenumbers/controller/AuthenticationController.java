@@ -26,6 +26,17 @@ public class AuthenticationController {
         this.tokenService = tokenService;
     }
 
+    @PostMapping("/login")
+    public String login(@RequestBody Customer customer) {
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        customer.getUsername(),
+                        customer.getPassword()
+                )
+        );
+        return tokenService.generateToken(authentication);
+    }
+
 
 
     @PostMapping("/register")
@@ -37,16 +48,7 @@ public class AuthenticationController {
         }
     }
 
-    @PostMapping("/login")
-    public String login(@RequestBody Customer customer) {
-        Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        customer.getUsername(),
-                        customer.getPassword()
-                )
-        );
-        return tokenService.generateToken(authentication);
-    }
+
 
 
 

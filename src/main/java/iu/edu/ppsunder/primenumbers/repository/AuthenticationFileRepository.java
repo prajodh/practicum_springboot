@@ -39,7 +39,7 @@ public class AuthenticationFileRepository implements IAuthenticationRepository{
         List<String> data = Files.readAllLines(path);
         for (String line : data) {
             if (!line.trim().isEmpty()) {
-                String[] properties = line.split(";");
+                String[] properties = line.split(",");
                 if (properties[0].trim().equalsIgnoreCase(username.trim())) {
                     return new Customer(properties[0].trim(), properties[1].trim());
                 }
