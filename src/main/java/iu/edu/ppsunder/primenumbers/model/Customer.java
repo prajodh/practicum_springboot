@@ -1,7 +1,12 @@
 package iu.edu.ppsunder.primenumbers.model;
-
+import jakarta.persistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+@Table
+@Entity
 public class Customer {
 
+    @Id
     private String username;
 
     private String password;
